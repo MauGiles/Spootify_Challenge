@@ -1,0 +1,34 @@
+.sidebarOption {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-left: 10%;
+    cursor: pointer;
+    transition: 200ms color ease-in;
+    color: #AAAAAA;
+}
+
+.sidebarOption:hover {
+    color: white;
+}
+
+.sidebarOption-icon {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media only screen and (max-width: 1000px){
+    .sidebarOption {
+        padding: 5%;
+        justify-content: center;
+    }
+    .sidebarOption > p,
+    .sidebarOption > h4 {
+        display: none;
+    }
+
+    .sidebarOption-icon {
+        font-size: 30px;
+    }
+
+}

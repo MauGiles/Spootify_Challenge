@@ -1,0 +1,108 @@
+.footer {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    bottom: 0;
+    right: 0;
+    height: 70px;
+    width: calc(100% - 255px);
+    background: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #AAAAAA;
+}
+
+.footer-left {
+    flex: 0.2;
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+
+.footer-album-logo {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    object-fit: contain;
+    border-radius: 10px;
+    background-color: #888888;
+}
+
+.footer-song-info {
+    color: #444444;
+    font-size: 14px;
+}
+
+.footer-center {
+    flex: 0.6;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+}
+
+.footer-right {
+    flex: 0.2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-circle-icon {
+    color: #574FD8;
+    width: 40px!important;
+    height: 40px;
+}
+
+.step-backward-icon,
+.step-forward-icon,
+.heart-icon,
+.random-icon,
+.retweet-icon,
+.volume-icon,
+.ellipsis-icon {
+    width: 30px!important;
+    height: 20px;
+}
+
+.play-circle-icon:hover,
+.step-backward-icon:hover,
+.step-forward-icon:hover,
+.step-backward-icon:hover,
+.step-forward-icon:hover,
+.heart-icon:hover,
+.random-icon:hover,
+.retweet-icon:hover,
+.volume-icon:hover,
+.ellipsis-icon:hover {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.2);
+}
+
+.ellipsis-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px){
+    .footer {
+        width: calc(100% - 140px);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer-left {
+        display: none;
+    }
+    .footer-center {
+        padding: 0;
+    }
+    .heart-icon,
+    .random-icon,
+    .retweet-icon,
+    .volume-icon{
+        display: none;
+    }
+    .ellipsis-icon {
+        display: inherit;
+    }
+}

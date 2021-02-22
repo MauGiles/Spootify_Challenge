@@ -1,0 +1,115 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    background: var(--theme-page-background);
+    color: var(--theme-page-text);
+}
+
+.header-static {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    margin-left: auto;
+    align-items: center;
+    background-image: url("https://i2.wp.com/djmods.com/wp-content/uploads/2019/04/dj-background-1920x1080-for-hd-1080p-WTG3046342.jpg?ssl=1");
+    background-size: cover;
+}
+
+.header-text {
+    position: absolute;
+    right: 5%;
+}
+
+@media only screen and (max-width: 530px){
+    .header-static {
+        height: 250px;
+    }
+    .header-text {
+        font-size: 14px;
+        margin-left: 40%;
+    }
+}
+
+.header-static h1,h2 {
+    text-align: right;
+}
+
+.header-static h1 {
+    margin-bottom: 10px;
+}
+
+.sun-icon {
+    color: #FFA500;
+    cursor: pointer;
+}
+
+.moon-icon {
+    color: black;
+    cursor: pointer;
+}
+
+.header-content {
+    padding: 20px;
+    overflow-y: scroll;
+    height: 100vh;
+    padding-bottom: 70px;
+}
+
+.header-title-scroll {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.scroll {
+    font-size: 30px;
+    display: flex;
+    position: relative;
+    text-align: right;
+    width: 30px;
+}
+
+.scroll > svg {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    color: #564fd8;
+    margin: 0 10px;
+}
+
+.scroll > svg:hover {
+    transform: scale(1.2);
+}
+
+.header-content-shower {
+    display: flex;
+    width: 85vw;
+    overflow-x: scroll; 
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+}
+
+.header-content-shower::-webkit-scrollbar {
+    display: none;
+}
+
+@media only screen and (max-width: 1350px) {
+    .header-content-shower {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .header-title-scroll > h4 {
+        font-size: 12px;
+    }
+    .scroll {
+        font-size: 25px;
+    }
+    .header-content-shower {
+        width: 65vw;
+    }
+}
